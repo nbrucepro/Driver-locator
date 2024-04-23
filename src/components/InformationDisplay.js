@@ -2,7 +2,11 @@
 import React from "react";
 import { HStack, Text } from "@chakra-ui/react";
 
-function InformationDisplay({ nextStopName,distanceToNextStop, etaToNextStop }) {
+function InformationDisplay({
+  nextStopName,
+  distanceToNextStop,
+  etaToNextStop,
+}) {
   return (
     <HStack
       flexDirection={{ base: "column", md: "row" }}

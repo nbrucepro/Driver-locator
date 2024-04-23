@@ -57,7 +57,7 @@ function RouteCalculator({
     calculateRoute();
   }, [driverLocation, stops]);
 
-  return null; 
+  return null;
 }
 
 export default RouteCalculator;
