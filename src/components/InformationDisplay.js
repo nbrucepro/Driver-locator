@@ -2,7 +2,7 @@
 import React from "react";
 import { HStack, Text } from "@chakra-ui/react";
 
-function InformationDisplay({ nextStopName, etaToNextStop }) {
+function InformationDisplay({ nextStopName,distanceToNextStop, etaToNextStop }) {
   return (
     <HStack
       flexDirection={{ base: "column", md: "row" }}
@@ -11,6 +11,7 @@ function InformationDisplay({ nextStopName, etaToNextStop }) {
       justifyContent={"space-between"}
     >
       <Text>Next stop: {nextStopName}</Text>
+      <Text>Distance: {distanceToNextStop}</Text>
       <Text>Time: {etaToNextStop}</Text>
     </HStack>
   );
